@@ -67,4 +67,6 @@ test all the status and the given name in the query string, if it is object is c
 
 ![](https://scontent.famm9-1.fna.fbcdn.net/v/t1.15752-9/187990648_167646628531972_5902214225395498801_n.jpg?_nc_cat=108&ccb=1-3&_nc_sid=ae9488&_nc_eui2=AeHcZOr1_laWUOWTSltlPyrBQMG45t51G_dAwbjm3nUb9-UhVUDH7O1C3na5GyJF2Oo9j2y3HgYWqDfMaEdCCaXp&_nc_ohc=Ndt3dH9i-xIAX8V6dWQ&_nc_ht=scontent.famm9-1.fna&oh=52dfb7b69df4b35b07ba23a78d9f93fd&oe=60C6C9E2)
 
+## [Show in Mero](https://miro.com/welcomeonboard/QmSiVER3V8PCIwGYdQK0T47sNreZj7QeW0WvZoVU339C1r0xzonNN3HenKbUOzwp)
+
 
