@@ -3,7 +3,7 @@
 
 const server = require('../src/server');
 const supertest = require('supertest');
-const request = supertest(server.app);
+const request = supertest(server.server);
 
 describe('test server', ()=>{
   it('should get home route', async()=>{
@@ -16,7 +16,7 @@ describe('test server', ()=>{
     expect(response.status).toBe(404);
   });
   it('should get status 500', async ()=>{
-    const response = await request.get('/foo');
+    const response = await request.get('/wrong');
     expect(response.status).toBe(500);
   });
 });
