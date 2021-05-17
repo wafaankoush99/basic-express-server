@@ -44,44 +44,32 @@
 
 const express = require('express');
 const logger = require('./middleware/logger');
-const validator = require('./middleware/validator');
+// const validator = require('./middleware/validator');
 const errorHandler = require('./error-handlers/500');
 const notFoundHandler = require('./error-handlers/404');
 const server = express();
 let square = require('./middleware/validator');
-// let square = require('./middleware/server');
 server.use(logger);
-server.use(validator);
+// server.use(validator);
 
 server.get('/', (req,res)=>{
-  res.send('welcome to the server')
-})
+  res.send('welcome to the server');
+});
 
 
 
-server.get('/foo', (req,res)=>{
-  throw new Error('page not found')
-})
-
-
-
-
-// server.get('/', (req, res) => {
-//   res.send('Welcome To The Server ^_^');
-// });
-
-// server.get('/bad', (req, res) => {
-//   throw new Error('Sorry, Something Went Wrong X_X');
-// });
+server.get('/wrong', (req,res)=>{
+  throw new Error('page not found');
+});
 
 server.get('/person', square, (req, res) => {
   res.json({
-    square: req.query.name,
+    name: req.query.name,
   });
 });
 
+server.use('/wrong', errorHandler);
 server.use('*', notFoundHandler);
-server.use(errorHandler);
 
 
 function startServer(PORT) {
